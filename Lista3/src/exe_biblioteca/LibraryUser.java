@@ -29,8 +29,14 @@ public class LibraryUser {
     }
 
     public void addLoan(Book book, int days){
-        this.loans.add(new LoanItem(book, days));
-        System.out.println("Livro adicionado com sucesso");
+        if(loans.size() >= 5){
+            System.out.println("Limite de 5 livros emprestados atingido");
+        } else {
+            this.loans.add(new LoanItem(book, days));
+            System.out.println("Livro adicionado com sucesso");
+        }
+
+
     }
 
     public void removeLoanBookTitle(String title) {
@@ -60,6 +66,13 @@ public class LibraryUser {
             somaDias += loanItem.getDays();
         }
         System.out.println("Total de dias = " + somaDias);
+    }
+
+    public void listBooks(){
+        System.out.println("Livros emprestados: ");
+        for(LoanItem loanItem : loans){
+            System.out.println(loanItem.getBook().getTitle() + " ");
+        }
     }
 
     @Override

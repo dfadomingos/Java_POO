@@ -1,6 +1,5 @@
 import exe_biblioteca.Book;
 import exe_biblioteca.LibraryUser;
-import exe_biblioteca.LoanItem;
 
 public class MainLibrary {
     public static void main(String[] args) {
@@ -14,12 +13,16 @@ public class MainLibrary {
         objLibraryUser.addLoan(obj2, 2);
         objLibraryUser.addLoan(obj3, 8);
 
+        objLibraryUser.listBooks();
+
         System.out.println(objLibraryUser.toString());
 
         objLibraryUser.totalDaysBorrowed();
 
         objLibraryUser.removeLoanBookTitle("B");
         System.out.println(objLibraryUser.toString());
+
+        objLibraryUser.totalDaysBorrowed();
 
         objLibraryUser.clearLoans();
 
