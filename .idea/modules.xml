@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CorrecaoProva1/CorrecaoProva1.iml" filepath="$PROJECT_DIR$/CorrecaoProva1/CorrecaoProva1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java_POO.iml" filepath="$PROJECT_DIR$/.idea/Java_POO.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lista1/Lista1.iml" filepath="$PROJECT_DIR$/Lista1/Lista1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lista2/Lista2.iml" filepath="$PROJECT_DIR$/Lista2/Lista2.iml" />
