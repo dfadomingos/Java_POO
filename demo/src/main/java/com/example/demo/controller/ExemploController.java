@@ -50,4 +50,18 @@ public class ExemploController {
         return false;
     }
 
+    //verbo PUT - atualiza um produto
+    @PutMapping("/{id}")
+    public boolean atualiza(@PathVariable int id, @RequestBody Produto novoProduto){
+        //procura o produto para remover
+        for (Produto produto: produtos){
+            if (produto.getId() == id){
+                produto.setNome(novoProduto.getNome());
+                produto.setQtde(novoProduto.getQtde());
+                produto.setPreco(novoProduto.getPreco());
+                return true;
+            }
+        }
+        return false; //não encontrou
+    }
 }
