@@ -1,3 +1,5 @@
+//presente em todas as camadas e relacionado ao mapeamento objeto relacional
+
 package br.edu.fatecfranca.ExemploBD.model;
 
 import jakarta.persistence.*;

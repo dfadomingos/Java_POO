@@ -1,3 +1,5 @@
+//conecta e faz as operaões com o banco
+
 package br.edu.fatecfranca.ExemploBD.repository;
 
 import br.edu.fatecfranca.ExemploBD.model.Produto;
