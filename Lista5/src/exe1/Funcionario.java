@@ -1,5 +1,6 @@
 package exe1;
 
+// a classe é abstrata pq tem o metodo abstrato
 public abstract class Funcionario {
     protected String nome;
     protected double salarioBase;

@@ -15,6 +15,8 @@ public class MainFuncionario {
         lista.add(clt);
         lista.add(pj);
 
-        System.out.println(lista);
+        for (Funcionario funcionario : lista){
+            System.out.println(funcionario.toString());  //polimorfismo
+        }
     }
 }
